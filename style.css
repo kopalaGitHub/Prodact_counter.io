@@ -1,0 +1,13 @@
+.font-game {
+  font-family: "Silkscreen", sans-serif !important;
+}
+.font-dance {
+  font-family: "Pacifico", cursive !important;
+}
+.vh-90 {
+  height: 90vh !important;
+}
+
+.mw-25 {
+  max-width: 25% !important;
+}

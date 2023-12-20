@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Silkscreen&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- title -->
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="home-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#home"
+          type="button"
+          role="tab"
+          aria-controls="home"
+          aria-selected="true"
+        >
+          Home
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="profile-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#profile"
+          type="button"
+          role="tab"
+          aria-controls="profile"
+          aria-selected="false"
+        >
+          Profile
+        </button>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div
+      class="tab-content vh-90 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="tab-pane active"
+        id="home"
+        role="tabpanel"
+        aria-labelledby="home-tab"
+      >
+        <div class="container card text-center bg-warning bg-gradient">
+          <h4 class="card-title display-2 font-game">Prodact counter</h4>
+          <div class="card-body">
+            <p
+              class="card-text display-6 text-info my-4 font-game"
+              id="counter"
+            >
+              __
+            </p>
+            <div class="d-flex gap-5 justify-content-center mb-5">
+              <button
+                type="button"
+                class="btn btn-success w-25 text-uppercase font-game"
+                onclick="btnClickUp()"
+              >
+                up
+              </button>
+              <button
+                type="button"
+                class="btn btn-danger w-25 text-uppercase font-game"
+                onclick="btnClickDown()"
+              >
+                down
+              </button>
+            </div>
+            <p class="text-muted fw-bold font-dance">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              enim fuga voluptatibus quibusdam. Optio, quidem accusamus ipsam
+              inventore enim excepturi exercitationem perspiciatis maiores rerum
+              debitis architecto blanditiis est eos hic, minima cumque dolorem,
+              obcaecati ab expedita. Vitae at perspiciatis, voluptate magni
+              dolor sint reiciendis tenetur officiis repellendus sunt, corrupti
+              fugit!
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- second page -->
+      <div
+        class="tab-pane container card text-center bg-warning bg-gradient"
+        id="profile"
+        role="tabpanel"
+        aria-labelledby="profile-tab"
+      >
+        <div class="card-body">
+          <h4 class="card-title display-2 font-game">Prodact information</h4>
+          <p class="card-text text-info my-4 font-game">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
+            cumque. Dignissimos, ab. Aliquam quaerat inventore iste officiis
+            odio deserunt incidunt, corrupti recusandae vel amet saepe aliquid
+            eveniet porro, qui quam pariatur, quo ex sed possimus? Officia quod
+            ut nihil quae? Quae quos consequuntur, optio aliquid neque voluptate
+            assumenda sapiente sit dolorem tempore obcaecati tempora? Enim dicta
+            nulla ipsum rem quis?
+          </p>
+          <div class="d-flex gap-5 justify-content-center mb-3">
+            <img
+              src="./conttroler.jpeg"
+              class="img-fluid rounded-top mw-25"
+              alt=""
+            />
+            <img src="./download.jpeg" class="img-fluid rounded-top" alt="" />
+          </div>
+          <button
+            type="button"
+            class="btn btn-primary w-25 text-uppercase font-game"
+          >
+            BUY
+          </button>
+
+          <p class="text-muted fw-bold font-dance mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            enim fuga voluptatibus quibusdam. Optio, quidem accusamus ipsam
+            inventore enim excepturi exercitationem perspiciatis maiores rerum
+            debitis architecto blanditiis est eos hic, minima cumque dolorem,
+            obcaecati ab expedita. Vitae at perspiciatis, voluptate magni dolor
+            sint reiciendis tenetur officiis repellendus sunt, corrupti fugit!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <!--  -->
+    <script src="./script.js"></script>
+  </body>
+</html>
